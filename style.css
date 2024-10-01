@@ -425,7 +425,7 @@ a:focus {
     font-size: 25px;
     color: #343148;
     margin-bottom: 15px;
-    border: 1px solid #F7CAC9;
+    border: 0.5px solid white;
     border-radius: 50px;
 }
 
@@ -463,9 +463,9 @@ a:focus {
     transition: .3s;
 }
 
-.contact .contact-form .btn:hover {
+.contact  .btn:hover {
     color: #343148;
-    background: #F7CAC9;
+    background: white;
 }
 
 .contact .help-block ul {
@@ -473,3 +473,4 @@ a:focus {
     padding: 0;
     list-style-type: none;
 }
+
