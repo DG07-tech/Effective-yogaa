@@ -473,4 +473,115 @@ a:focus {
     padding: 0;
     list-style-type: none;
 }
+/*******************************/
+/********* Service CSS *********/
+/*******************************/
+.service {
+    display: flex;
+    position: relative;
+    width: 100%;
+    padding: 30px 0 15px 0;
+}
+.service .service-item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px;
+    box-shadow: #050303;
+    border: 1px solid rgba(240, 238, 238, 0.07);
+    transition: .3s;
+}
+
+.service .service-item:hover {
+    background: #F7CAC9;
+    color: black;
+}
+
+.service .service-icon {
+    position: relative;
+    margin: 25px auto 50px auto;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service .service-icon img {
+    position: absolute;
+    height: 170px;
+    width: 350px;
+    font-size: 5px;
+    color: #f6f6f8;
+    z-index: 3;
+}
+
+.service .service-icon:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    animation: pulse-border 2000ms ease-out infinite;
+}
+
+.service .service-icon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #F7CAC9;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(0%) translateZ(0) scale(1);
+    opacity: 25%;
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%) translateZ(0) scale(1.3);
+    opacity: 50%;
+  }
+}
+
+.service .service-item h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: .3s;
+}
+.service a:hover{
+    color:#090505;
+    font-weight: 400;
+    
+}
+.service .service-item:hover h3,
+.service .service-item.active h3 {
+    color: black;
+    opacity: 50%;
+}
+
+.service .service-item p {
+    margin: 0;
+    font-size: 16px;
+}
+.service .section-header p{
+    font-size: 26px;
+}
+
 
