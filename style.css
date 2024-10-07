@@ -584,4 +584,40 @@ a:focus {
     font-size: 26px;
 }
 
+/*YOGA IN DETAILS*/
+
+
+.hero1 .page-header1 h2 img{
+    margin-left: 0;
+    height: 100px;
+}
+.hero1 .page-header1 a{
+    margin-left: 200px;
+    margin-top: 0px;
+    height: 100px;
+}
+
+.section-header{
+    margin-top: 100px;
+}
+.section-header1{
+    margin-top: 80px;
+}
+.about-img1{
+    margin-top: 100px;
+}
+
+.page-header1{
+    padding: 40px;
+    background-color: white;
+}
+.about .about-img1 img{
+    margin-top: 100px;
+}
+.about .about-img img{
+    margin-top: 80px;
+}
+
+
+
 
